@@ -6,7 +6,7 @@ for path in pathlib.Path("dict").iterdir():
                 data=f.read()
                 data=data.replace(","," ")
                 word=data.split()
-                print(path,len(word))
+                print(path,"-", len(word))
             except UnicodeDecodeError:
                 pass
         
