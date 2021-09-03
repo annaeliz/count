@@ -1,4 +1,5 @@
 import pathlib
+
 for path in pathlib.Path("dict").iterdir():
         if path.is_file():
             f=open(path,"r")
