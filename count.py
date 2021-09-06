@@ -16,7 +16,7 @@ def countword(basepath):
                         pass
                         print("Please enter vaild File/Folder name")
     except:
-            print("Files")
+            print("File")
             try:
                         f=open(basepath,"r")
                         data=f.read()
