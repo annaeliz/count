@@ -1,6 +1,4 @@
 from pathlib import Path
-from collections import Counter
-
 basepath = Path(input("Please enter the Folder name: "))
 def countword(basepath):
     files_in_basepath = basepath.iterdir()
@@ -16,9 +14,6 @@ def countword(basepath):
             except UnicodeDecodeError:
                 pass
                 print("Please enter vaild File/Folder name")
-    return Counter(f.read().split())
+    return(basepath)
 print(countword(basepath))   
-
-print("Number of words in the file :",countword(basepath))
-
 
